@@ -1,0 +1,8 @@
+set terminal jpeg
+set datafile separator ','
+set title 'Cohetes: Alturas en funcion de el tiempo'
+set xlabel 'Tiempo t'
+set ylabel 'Altura y'
+set grid
+set output 'graficacoheteex1.jpeg'
+plot 'datos3.txt' using 1:2, 'datos2.txt' using 1:2, 'datos1.txt' using 1:2 with linespoints pt 1 ps 1 

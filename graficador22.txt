@@ -1,0 +1,8 @@
+set terminal jpeg
+set datafile separator ','
+set title 'Cohete 2: Velocidad en funcion de el tiempo'
+set xlabel 'Tiempo t'
+set ylabel 'Velocidad'
+set grid
+set output 'graficacohete22.jpeg'
+plot 'datos2.txt' using 1:3 with linespoints pt 1 ps 1 

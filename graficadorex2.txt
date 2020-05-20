@@ -1,0 +1,8 @@
+set terminal jpeg
+set datafile separator ','
+set title 'Cohetes: Velocidades en funcion de el tiempo'
+set xlabel 'Tiempo t'
+set ylabel 'Velocidad y'
+set grid
+set output 'graficacoheteex2.jpeg'
+plot 'datos3.txt' using 1:3, 'datos2.txt' using 1:3, 'datos1.txt' using 1:3 with linespoints pt 1 ps 1 

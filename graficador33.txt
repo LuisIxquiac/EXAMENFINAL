@@ -1,0 +1,8 @@
+set terminal jpeg
+set datafile separator ','
+set title 'Cohete 3: Velocidad y Posicion'
+set xlabel 'Posicion'
+set ylabel 'Velocidad'
+set grid
+set output 'graficacohete33.jpeg'
+plot 'datos3.txt' using 2:3 with linespoints pt 1 ps 1 
